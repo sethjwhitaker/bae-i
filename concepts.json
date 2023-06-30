@@ -1,0 +1,265 @@
+{
+  "concept0": {
+    "id": "concept0",
+    "type": "simple",
+    "data": "h",
+    "lastUsed": 1681013434544,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [
+      {
+        "id": "concept1",
+        "lastUsed": 1681013434546,
+        "timesUsed": 1
+      }
+    ],
+    "parent": [
+      {
+        "id": "concept2",
+        "lastUsed": 1681013434546,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept1": {
+    "id": "concept1",
+    "type": "simple",
+    "data": "i",
+    "lastUsed": 1681013434545,
+    "timesUsed": 1,
+    "prev": [
+      {
+        "id": "concept0",
+        "lastUsed": 1681013434546,
+        "timesUsed": 1
+      }
+    ],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept2",
+        "lastUsed": 1681013434546,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept2": {
+    "id": "concept2",
+    "type": "parent",
+    "data": "",
+    "lastUsed": 1681013434546,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [],
+    "child": [
+      "concept0",
+      "concept1"
+    ],
+    "algorithm": [
+      "concept6"
+    ]
+  },
+  "concept3": {
+    "id": "concept3",
+    "type": "workmemref",
+    "data": 0,
+    "lastUsed": 1681013434550,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [],
+    "child": []
+  },
+  "concept4": {
+    "id": "concept4",
+    "type": "loadworkmem",
+    "data": "concept3",
+    "lastUsed": 1681013434550,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept6",
+        "lastUsed": 1681013434550,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept5": {
+    "id": "concept5",
+    "type": "outworkmem",
+    "data": "concept3",
+    "lastUsed": 1681013434550,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept6",
+        "lastUsed": 1681013434550,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept6": {
+    "id": "concept6",
+    "type": "algorithm",
+    "data": "",
+    "lastUsed": 1681013434550,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [],
+    "child": [
+      "concept4",
+      "concept5"
+    ]
+  },
+  "concept7": {
+    "id": "concept7",
+    "type": "simple",
+    "data": "b",
+    "lastUsed": 1681013476660,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [
+      {
+        "id": "concept8",
+        "lastUsed": 1681013476661,
+        "timesUsed": 1
+      }
+    ],
+    "parent": [
+      {
+        "id": "concept10",
+        "lastUsed": 1681013476662,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept8": {
+    "id": "concept8",
+    "type": "simple",
+    "data": "y",
+    "lastUsed": 1681013476661,
+    "timesUsed": 1,
+    "prev": [
+      {
+        "id": "concept7",
+        "lastUsed": 1681013476661,
+        "timesUsed": 1
+      }
+    ],
+    "next": [
+      {
+        "id": "concept9",
+        "lastUsed": 1681013476662,
+        "timesUsed": 1
+      }
+    ],
+    "parent": [
+      {
+        "id": "concept10",
+        "lastUsed": 1681013476662,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept9": {
+    "id": "concept9",
+    "type": "simple",
+    "data": "e",
+    "lastUsed": 1681013476661,
+    "timesUsed": 1,
+    "prev": [
+      {
+        "id": "concept8",
+        "lastUsed": 1681013476662,
+        "timesUsed": 1
+      }
+    ],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept10",
+        "lastUsed": 1681013476662,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept10": {
+    "id": "concept10",
+    "type": "parent",
+    "data": "",
+    "lastUsed": 1681013476662,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [],
+    "child": [
+      "concept7",
+      "concept8",
+      "concept9"
+    ],
+    "algorithm": [
+      "concept13"
+    ]
+  },
+  "concept11": {
+    "id": "concept11",
+    "type": "loadworkmem",
+    "data": "concept3",
+    "lastUsed": 1681013476664,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept13",
+        "lastUsed": 1681013476665,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept12": {
+    "id": "concept12",
+    "type": "outworkmem",
+    "data": "concept3",
+    "lastUsed": 1681013476664,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [
+      {
+        "id": "concept13",
+        "lastUsed": 1681013476665,
+        "timesUsed": 1
+      }
+    ],
+    "child": []
+  },
+  "concept13": {
+    "id": "concept13",
+    "type": "algorithm",
+    "data": "",
+    "lastUsed": 1681013476665,
+    "timesUsed": 1,
+    "prev": [],
+    "next": [],
+    "parent": [],
+    "child": [
+      "concept11",
+      "concept12"
+    ]
+  }
+}

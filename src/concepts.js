@@ -31,11 +31,11 @@ const getConcept = (conceptID) => {
   return conceptData[conceptID]
 }
 
-const createConcept = (value) => {
+const createConcept = ({ value, type }) => {
   const id = 'concept' + conceptCounter++
   return conceptData[id] = {
     id: id,
-    type: 'simple',
+    type: type ? type : 'simple',
     data: value,
     lastUsed: Date.now(),
     timesUsed: 1,
@@ -46,11 +46,11 @@ const createConcept = (value) => {
   }
 }
 
-const createParentConcept = (childConcepts) => {
+const createParentConcept = (childConcepts, type) => {
   const id = 'concept' + conceptCounter++
   conceptData[id] = {
     id: id,
-    type: 'parent',
+    type: type ? type : 'parent',
     data: '',
     lastUsed: Date.now(),
     timesUsed: 1,
@@ -107,7 +107,7 @@ const updateSimpleRelationship = (conceptA, conceptB) => {
 
 const updateParentRelationship = (parentConcept) => {
   for (const childID of parentConcept.child) {
-    const rel = concepts[childID].parent.find(c => c.id === parentConcept.id)
+    const rel = conceptData[childID].parent.find(c => c.id === parentConcept.id)
     rel.lastUsed = Date.now()
     rel.timesUsed++
   }
@@ -120,7 +120,7 @@ const searchByData = (input) => {
     if (concept.data === input) foundConcept = concept
   }
   if (!foundConcept) {
-    return createConcept(input)
+    return createConcept({value: input})
   }
 
   foundConcept.lastUsed = Date.now()
